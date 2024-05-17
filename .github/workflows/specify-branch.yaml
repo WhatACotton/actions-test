@@ -1,6 +1,10 @@
-name: always occur
+name: dev branch only
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-on: [push]
+
+on:
+  push:
+    branches:
+      - dev
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
